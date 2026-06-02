@@ -1,5 +1,5 @@
 const mapWidth = 8398;
-const mapHeight = 4298;
+const mapHeight = 5668;
 
 const bounds = [[0, 0], [mapHeight, mapWidth]];
 
@@ -20,17 +20,17 @@ sidebar.addEventListener('touchmove', function(e) {
 }, { passive: true });
 
 /* 3. BASE MAP */
-L.imageOverlay('RoCmap.png', bounds).addTo(map);
+L.imageOverlay('Earthseamap.png', bounds).addTo(map);
 
 /* 4. ROUTES (START HIDDEN) */
 const routes = {
-    dumai: L.imageOverlay('Dumai.png', bounds, { opacity: 0 }),
-    glorian: L.imageOverlay('Glorian.png', bounds, { opacity: 0 }),
+    dumai: L.imageOverlay('Ged.png', bounds, { opacity: 0 }),
+    glorian: L.imageOverlay('GedandTenar.png', bounds, { opacity: 0 }),
 };
 
 /* ADD ROUTES TO MAP */
-routes.dumai.addTo(map);
-routes.glorian.addTo(map);
+routes.ged.addTo(map);
+routes.gedandtenar.addTo(map);
 
 /* 5. TOGGLE FUNCTION */
 function toggleRoute(name) {
@@ -97,8 +97,8 @@ function applyInitialView() {
 
 /* 9. WINDOW.LOAD */
 window.addEventListener("load", () => {
-    updateButtonState("dumai", false);
-    updateButtonState("glorian", false);
+    updateButtonState("ged", false);
+    updateButtonState("gedandtenar", false);
 });
 
 /* 10. MAP.WHENREADY */
