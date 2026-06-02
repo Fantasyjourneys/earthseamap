@@ -1,5 +1,5 @@
-const mapWidth = 8398;
-const mapHeight = 5668;
+const mapWidth = 4199;
+const mapHeight = 2834;
 
 const bounds = [[0, 0], [mapHeight, mapWidth]];
 
