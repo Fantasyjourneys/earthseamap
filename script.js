@@ -24,8 +24,8 @@ L.imageOverlay('Earthseamap.png', bounds).addTo(map);
 
 /* 4. ROUTES (START HIDDEN) */
 const routes = {
-    dumai: L.imageOverlay('Ged.png', bounds, { opacity: 0 }),
-    glorian: L.imageOverlay('GedandTenar.png', bounds, { opacity: 0 }),
+    ged: L.imageOverlay('Ged.png', bounds, { opacity: 0 }),
+    gedandtenar: L.imageOverlay('GedandTenar.png', bounds, { opacity: 0 }),
 };
 
 /* ADD ROUTES TO MAP */
