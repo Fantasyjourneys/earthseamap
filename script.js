@@ -6,7 +6,7 @@ const bounds = [[0, 0], [mapHeight, mapWidth]];
 /* 1. CREATE MAP */
 const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -3,
+    minZoom: -1,
 });
 
 /* 2. FIX SIDEBAR TOUCH ISSUES (IMPORTANT) */
