@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earthsea map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<button id="mobile-menu-button" onclick="toggleSidebar()">
+    ☰ Characters
+</button>
+    
+<div class="sidebar">
+    <h1 class="site-title">
+    The Earthsea Cycle
+    </h1>    
+    <h2 class="book-title">A Wizard of Earthsea</h2>
+        <button id="btn-ged" style="--c:#33cccc" onclick="toggleRoute('ged')">Ged</button>
+    <h2 class="book-title">The Tombs of Atuan</h2>    
+        <button id="btn-gedandtenar" style="--c:#993399" onclick="toggleRoute('gedandtenar')">Ged and Tenar</button>
+</div>
+
+<div id="map"></div>
+
+<div id="overlay" onclick="toggleSidebar()"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
