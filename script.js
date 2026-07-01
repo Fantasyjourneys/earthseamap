@@ -26,11 +26,13 @@ L.imageOverlay('Earthseamap.png', bounds).addTo(map);
 const routes = {
     ged: L.imageOverlay('Ged.png', bounds, { opacity: 0 }),
     gedandtenar: L.imageOverlay('GedandTenar.png', bounds, { opacity: 0 }),
+    gedandarren: L.imageOverlay('GedandArren.png', bounds, { opacity: 0 }),
 };
 
 /* ADD ROUTES TO MAP */
 routes.ged.addTo(map);
 routes.gedandtenar.addTo(map);
+routes.gedandarren.addTo(map);
 
 /* 5. TOGGLE FUNCTION */
 function toggleRoute(name) {
@@ -99,6 +101,7 @@ function applyInitialView() {
 window.addEventListener("load", () => {
     updateButtonState("ged", false);
     updateButtonState("gedandtenar", false);
+    updateButtonState("gedandarren", false);
 });
 
 /* 10. MAP.WHENREADY */
